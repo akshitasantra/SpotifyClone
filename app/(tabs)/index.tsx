@@ -1,14 +1,17 @@
-import { StyleSheet } from 'react-native';
+import * as React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 
-import EditScreenInfo from '@/components/EditScreenInfo';
-import { Text, View } from '@/components/Themed';
+import Album from '../../components/Album'
 
+const album = {
+  id: '1',
+  imageUri: 'https://cache.boston.com/resize/bonzai-fba/Globe_Photo/2011/04/14/1302796985_4480/539w.jpg',
+  artistsHeadline: 'Taylor Swift, Cardi Objective C, Avicii'
+}
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="app/(tabs)/index.tsx" />
+      <Album album={album} />
     </View>
   );
 }
