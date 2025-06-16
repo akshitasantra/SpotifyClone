@@ -51,6 +51,14 @@ export default function TabLayout() {
                     ),
                 }}
             />
+
+            <Tabs.Screen
+                name="AlbumScreen"
+                options={{
+                    title: 'AlbumScreen',
+                }}
+            />
+
             <Tabs.Screen
                 name="two"
                 options={{
