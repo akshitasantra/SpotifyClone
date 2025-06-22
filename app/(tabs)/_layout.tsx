@@ -80,6 +80,12 @@ export default function TabLayout() {
                     tabBarIcon: ({ color }) =>  <FontAwesome5 name="spotify" size={30} style={{ marginBottom: -3}} color={color}/>,
                 }}
             />
+            <Tabs.Screen
+                name="_AlbumScreen"
+                options={{
+                    href: null, // hides it from tab bar
+                }}
+            />
         </Tabs>
     );
 }

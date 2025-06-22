@@ -2,11 +2,11 @@ import React, {useEffect} from 'react';
 import {View, Text, FlatList} from 'react-native';
 import { useRoute } from '@react-navigation/native';
 
-import albumDetails from '../data/albumDetails'
-import SongListItem from '../components/SongListItem';
-import AlbumHeader from "../components/AlbumHeader";
+import albumDetails from '../../data/albumDetails'
+import SongListItem from '../../components/SongListItem';
+import AlbumHeader from "../../components/AlbumHeader";
 
-const AlbumScreen = () => {
+const _AlbumScreen = () => {
     const route = useRoute();
 
     useEffect( () => {
@@ -26,4 +26,4 @@ const AlbumScreen = () => {
     )
 }
 
-export default AlbumScreen;
+export default _AlbumScreen;
