@@ -9,6 +9,7 @@ export default function TabOneScreen() {
   return (
     <View style={styles.container}>
       <FlatList
+        contentContainerStyle={{paddingBottom: 100}}
         data={albumCategories}
         renderItem={({ item }) => (
           <AlbumCategory

@@ -17,6 +17,7 @@ const _AlbumScreen = () => {
         <View>
 
             <FlatList
+                contentContainerStyle={{paddingBottom: 100}}
                 data={albumDetails.songs}
                 renderItem={({ item }) => <SongListItem song={item} />}
                 keyExtractor={( item ) => item.id}
