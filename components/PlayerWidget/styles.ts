@@ -5,11 +5,9 @@ const styles = StyleSheet.create({
         position: 'absolute',
         bottom: 70,
         backgroundColor: '#131313',
-        flexDirection: 'row',
         width: '100%',
-        borderWidth: 1,
+        borderWidth: 2,
         borderColor: 'black',
-        alignItems: 'center',
     },
     progress: {
         height: 3,
